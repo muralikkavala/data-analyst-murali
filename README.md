@@ -1,1 +1,25 @@
-# data-analyst-murali
+Navigate to the AWS S3 Console.
+Click on "Create Bucket" and configure the name, region, and settings like versioning or encryption.
+Set up permissions to restrict access only to authorized users.
+Use the AWS Console, AWS CLI, or SDK to upload voting records.
+Structure data using folders, e.g., /year/month/council_records/.
+Create Lambda functions triggered by changes to S3.
+Use Python or Node.js to parse and validate data.
+Store processed data or logs in S3 or send results to a database.
+In the S3 bucket settings, configure event notifications to trigger the Lambda function whenever new voting records are uploaded.
+Go to the Athena console.
+Define a schema for your voting records data stored in S3.
+Write SQL queries to perform exploratory data analysis (EDA) on the voting records.
+Configure Athena to store query results back into an S3 bucket for further analysis.
+Go to QuickSight and create a new dataset connected to Athena.
+Create interactive dashboards and visualizations for public and internal use.
+Use AWS IAM to define which users can access these reports and dashboards.
+In the CloudWatch console, create log groups for your Lambda functions and Athena queries to monitor performance and errors.
+Enable metrics and alarms to notify you of any unusual activity, such as spikes in voting record uploads or query execution times.
+Create CloudWatch dashboards to visualize key metrics, such as Lambda function invocations, S3 bucket activity, and Athena query execution.
+Define IAM roles for users, administrators, and automated services.
+Attach policies to control access to the voting records stored in S3 and other services.
+Enable Multi-Factor Authentication (MFA) for critical actions.
+Go to CloudTrail and enable it for all AWS services in the region.
+Ensure voting record modifications and access actions are logged and stored in S3.
+Use CloudWatch to monitor CloudTrail logs and trigger alerts if suspicious activity occurs
